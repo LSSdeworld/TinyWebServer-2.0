@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="CGImysql\sql_connection_pool.cpp">
+      <Filter>CGImysql</Filter>
+    </ClCompile>
+    <ClCompile Include="http\http_conn.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="log\log.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="timer\lst_timer.cpp">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="test_presure\webbench-1.5\socket.c">
+      <Filter>test_presure\webbench-1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="test_presure\webbench-1.5\webbench.c">
+      <Filter>test_presure\webbench-1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_Code\main.cpp">
+      <Filter>Source_Code</Filter>
+    </ClCompile>
+    <ClCompile Include="config\config.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="webserver\webserver.cpp">
+      <Filter>webserver</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CGImysql">
+      <UniqueIdentifier>{450b1063-bedb-449e-9c8a-eaf2618e778f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{82d6e6e7-9806-4e07-a310-bafd97820062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lock">
+      <UniqueIdentifier>{cd7d289d-b8c4-4454-bc3a-45381bdb756f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{a2475c21-75fd-4d83-8d4d-ccf380087726}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="readme">
+      <UniqueIdentifier>{bca243db-5171-4c3e-b224-3ec41b4543d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="root">
+      <UniqueIdentifier>{b0b12f47-b5ba-4596-918b-0ae76b4a755a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test_presure">
+      <UniqueIdentifier>{4c4739aa-06ad-4889-8e27-a94cbc52f87d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="threatpool">
+      <UniqueIdentifier>{2ae4cb51-7d06-48c0-b0ab-4674ff2907c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="timer">
+      <UniqueIdentifier>{f74c0f82-3fca-42e4-b72a-350649330d9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test_presure\webbench-1.5">
+      <UniqueIdentifier>{02a1301a-3048-48ea-ade0-19a48eef1f1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test_presure\webbench-1.5\debian">
+      <UniqueIdentifier>{f50e7be3-2e62-4898-8237-fb75b89eb528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="readme\images">
+      <UniqueIdentifier>{4b5989c3-351f-4539-bfc2-70cbdc517906}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{de68fbce-907a-4a87-9cdf-0bcea6f1f82e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webserver">
+      <UniqueIdentifier>{89ac2a53-6035-4052-8573-3dc13cf44f41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source_Code">
+      <UniqueIdentifier>{66d66925-3bf6-4cd2-a53d-3fccbae9f87b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CGImysql\README.md">
+      <Filter>CGImysql</Filter>
+    </None>
+    <None Include="http\README.md">
+      <Filter>http</Filter>
+    </None>
+    <None Include="lock\README.md">
+      <Filter>lock</Filter>
+    </None>
+    <None Include="log\README.md">
+      <Filter>log</Filter>
+    </None>
+    <None Include="timer\README.md">
+      <Filter>timer</Filter>
+    </None>
+    <None Include="threadpool\README.md">
+      <Filter>threatpool</Filter>
+    </None>
+    <None Include="test_presure\README.md">
+      <Filter>test_presure</Filter>
+    </None>
+    <None Include="test_presure\webbench-1.5\ChangeLog">
+      <Filter>test_presure\webbench-1.5</Filter>
+    </None>
+    <None Include="test_presure\webbench-1.5\COPYRIGHT">
+      <Filter>test_presure\webbench-1.5</Filter>
+    </None>
+    <None Include="test_presure\webbench-1.5\Makefile">
+      <Filter>test_presure\webbench-1.5</Filter>
+    </None>
+    <None Include="test_presure\webbench-1.5\tags">
+      <Filter>test_presure\webbench-1.5</Filter>
+    </None>
+    <None Include="test_presure\webbench-1.5\webbench">
+      <Filter>test_presure\webbench-1.5</Filter>
+    </None>
+    <None Include="test_presure\webbench-1.5\webbench.1">
+      <Filter>test_presure\webbench-1.5</Filter>
+    </None>
+    <None Include="test_presure\webbench-1.5\debian\changelog">
+      <Filter>test_presure\webbench-1.5\debian</Filter>
+    </None>
+    <None Include="test_presure\webbench-1.5\debian\control">
+      <Filter>test_presure\webbench-1.5\debian</Filter>
+    </None>
+    <None Include="test_presure\webbench-1.5\debian\copyright">
+      <Filter>test_presure\webbench-1.5\debian</Filter>
+    </None>
+    <None Include="test_presure\webbench-1.5\debian\dirs">
+      <Filter>test_presure\webbench-1.5\debian</Filter>
+    </None>
+    <None Include="test_presure\webbench-1.5\debian\rules">
+      <Filter>test_presure\webbench-1.5\debian</Filter>
+    </None>
+    <None Include="root\fans.html">
+      <Filter>root</Filter>
+    </None>
+    <None Include="root\judge.html">
+      <Filter>root</Filter>
+    </None>
+    <None Include="root\log.html">
+      <Filter>root</Filter>
+    </None>
+    <None Include="root\logError.html">
+      <Filter>root</Filter>
+    </None>
+    <None Include="root\picture.html">
+      <Filter>root</Filter>
+    </None>
+    <None Include="root\README.md">
+      <Filter>root</Filter>
+    </None>
+    <None Include="root\register.html">
+      <Filter>root</Filter>
+    </None>
+    <None Include="root\registerError.html">
+      <Filter>root</Filter>
+    </None>
+    <None Include="root\video.html">
+      <Filter>root</Filter>
+    </None>
+    <None Include="root\welcome.html">
+      <Filter>root</Filter>
+    </None>
+    <None Include="readme\readme.html">
+      <Filter>readme</Filter>
+    </None>
+    <None Include="readme\stylesheet.css">
+      <Filter>readme</Filter>
+    </None>
+    <None Include="build.sh" />
+    <None Include="LICENSE" />
+    <None Include="makefile" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CGImysql\sql_connection_pool.h">
+      <Filter>CGImysql</Filter>
+    </ClInclude>
+    <ClInclude Include="http\http_conn.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="lock\locker.h">
+      <Filter>lock</Filter>
+    </ClInclude>
+    <ClInclude Include="log\block_queue.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="log\log.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="timer\lst_timer.h">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="threadpool\threadpool.h">
+      <Filter>threatpool</Filter>
+    </ClInclude>
+    <ClInclude Include="config\config.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="webserver\webserver.h">
+      <Filter>webserver</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="root\favicon.ico">
+      <Filter>root</Filter>
+    </Image>
+    <Image Include="root\frame.jpg">
+      <Filter>root</Filter>
+    </Image>
+    <Image Include="root\login.gif">
+      <Filter>root</Filter>
+    </Image>
+    <Image Include="root\loginnew.gif">
+      <Filter>root</Filter>
+    </Image>
+    <Image Include="root\picture.gif">
+      <Filter>root</Filter>
+    </Image>
+    <Image Include="root\register.gif">
+      <Filter>root</Filter>
+    </Image>
+    <Image Include="root\registernew.gif">
+      <Filter>root</Filter>
+    </Image>
+    <Image Include="root\test1.jpg">
+      <Filter>root</Filter>
+    </Image>
+    <Image Include="root\video.gif">
+      <Filter>root</Filter>
+    </Image>
+    <Image Include="root\xxx.jpg">
+      <Filter>root</Filter>
+    </Image>
+    <Image Include="readme\images\ArchOptions.gif">
+      <Filter>readme\images</Filter>
+    </Image>
+    <Image Include="readme\images\ChangeRemote.gif">
+      <Filter>readme\images</Filter>
+    </Image>
+    <Image Include="readme\images\debuggerexport.png">
+      <Filter>readme\images</Filter>
+    </Image>
+    <Image Include="readme\images\firstconnection.png">
+      <Filter>readme\images</Filter>
+    </Image>
+    <Image Include="readme\images\linker.png">
+      <Filter>readme\images</Filter>
+    </Image>
+    <Image Include="readme\images\ManageConnections.gif">
+      <Filter>readme\images</Filter>
+    </Image>
+    <Image Include="readme\images\OutputTypes.gif">
+      <Filter>readme\images</Filter>
+    </Image>
+    <Image Include="readme\images\postbuild.png">
+      <Filter>readme\images</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="root\xxx.mp4">
+      <Filter>root</Filter>
+    </Media>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ef549f70-1f55-43cf-b4ad-dc6365d0b39f}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="CGImysql\sql_connection_pool.cpp" />
+    <ClCompile Include="config\config.cpp" />
+    <ClCompile Include="http\http_conn.cpp" />
+    <ClCompile Include="log\log.cpp" />
+    <ClCompile Include="Source_Code\main.cpp" />
+    <ClCompile Include="test_presure\webbench-1.5\socket.c" />
+    <ClCompile Include="test_presure\webbench-1.5\webbench.c" />
+    <ClCompile Include="timer\lst_timer.cpp" />
+    <ClCompile Include="webserver\webserver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build.sh" />
+    <None Include="CGImysql\README.md" />
+    <None Include="http\README.md" />
+    <None Include="LICENSE" />
+    <None Include="lock\README.md" />
+    <None Include="log\README.md" />
+    <None Include="makefile" />
+    <None Include="README.md" />
+    <None Include="readme\readme.html" />
+    <None Include="readme\stylesheet.css" />
+    <None Include="root\fans.html" />
+    <None Include="root\judge.html" />
+    <None Include="root\log.html" />
+    <None Include="root\logError.html" />
+    <None Include="root\picture.html" />
+    <None Include="root\README.md" />
+    <None Include="root\register.html" />
+    <None Include="root\registerError.html" />
+    <None Include="root\video.html" />
+    <None Include="root\welcome.html" />
+    <None Include="test_presure\README.md" />
+    <None Include="test_presure\webbench-1.5\ChangeLog" />
+    <None Include="test_presure\webbench-1.5\COPYRIGHT" />
+    <None Include="test_presure\webbench-1.5\debian\changelog" />
+    <None Include="test_presure\webbench-1.5\debian\control" />
+    <None Include="test_presure\webbench-1.5\debian\copyright" />
+    <None Include="test_presure\webbench-1.5\debian\dirs" />
+    <None Include="test_presure\webbench-1.5\debian\rules" />
+    <None Include="test_presure\webbench-1.5\Makefile" />
+    <None Include="test_presure\webbench-1.5\tags" />
+    <None Include="test_presure\webbench-1.5\webbench" />
+    <None Include="test_presure\webbench-1.5\webbench.1" />
+    <None Include="threadpool\README.md" />
+    <None Include="timer\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CGImysql\sql_connection_pool.h" />
+    <ClInclude Include="config\config.h" />
+    <ClInclude Include="http\http_conn.h" />
+    <ClInclude Include="lock\locker.h" />
+    <ClInclude Include="log\block_queue.h" />
+    <ClInclude Include="log\log.h" />
+    <ClInclude Include="threadpool\threadpool.h" />
+    <ClInclude Include="timer\lst_timer.h" />
+    <ClInclude Include="webserver\webserver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="readme\images\ArchOptions.gif" />
+    <Image Include="readme\images\ChangeRemote.gif" />
+    <Image Include="readme\images\debuggerexport.png" />
+    <Image Include="readme\images\firstconnection.png" />
+    <Image Include="readme\images\linker.png" />
+    <Image Include="readme\images\ManageConnections.gif" />
+    <Image Include="readme\images\OutputTypes.gif" />
+    <Image Include="readme\images\postbuild.png" />
+    <Image Include="root\favicon.ico" />
+    <Image Include="root\frame.jpg" />
+    <Image Include="root\login.gif" />
+    <Image Include="root\loginnew.gif" />
+    <Image Include="root\picture.gif" />
+    <Image Include="root\register.gif" />
+    <Image Include="root\registernew.gif" />
+    <Image Include="root\test1.jpg" />
+    <Image Include="root\video.gif" />
+    <Image Include="root\xxx.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="root\xxx.mp4" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Code file\visual studio 2026\ConsoleApplication1\ConsoleApplication1\CGImysql;D:\Code file\visual studio 2026\ConsoleApplication1\ConsoleApplication1\http;D:\Code file\visual studio 2026\ConsoleApplication1\ConsoleApplication1\lock;D:\Code file\visual studio 2026\ConsoleApplication1\ConsoleApplication1\log;D:\Code file\visual studio 2026\ConsoleApplication1\ConsoleApplication1\timer;D:\Code file\visual studio 2026\ConsoleApplication1\ConsoleApplication1\threadpool;D:\Code file\visual studio 2026\ConsoleApplication1\ConsoleApplication1\test_presure;D:\Code file\visual studio 2026\ConsoleApplication1\ConsoleApplication1\config;D:\Code file\visual studio 2026\ConsoleApplication1\ConsoleApplication1\webserver;/usr/include/mysql;/usr/lib64/mysql;/usr/lib64/mysql/libmysqlclient.so;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
