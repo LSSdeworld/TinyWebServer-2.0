@@ -108,12 +108,16 @@ void WebServer::thread_pool()
 }
 
 //创建网络编程：Socket网络编程基础步骤
+//非阻塞设置在http_conn.cpp的int setnonblocking(int fd)中
 void WebServer::eventListen()
 {
-    //SOCK_STREAM 表示使用面向字节流的TCP协议；PF_INET == IPV4
+    // 1. 创建TCP监听socket
+    // socket参数：
+    //SOCK_STREAM 表示使用面向字节流的TCP协议；PF_INET == IPV4；0=默认协议（TCP）
     m_listenfd = socket(PF_INET, SOCK_STREAM, 0);
     assert(m_listenfd >= 0);
 
+    // 2. 设置socket选项：端口复用（解决服务器重启后端口被占用的问题）
     //优雅关闭连接
     //有关setsocket函数可以参考：
     //https://baike.baidu.com/item/setsockopt/10069288?fr=aladdin
@@ -128,17 +132,26 @@ void WebServer::eventListen()
         setsockopt(m_listenfd, SOL_SOCKET, SO_LINGER, &tmp, sizeof(tmp));
     }
 
-    int ret = 0;
+    // 3. 初始化sockaddr_in结构体（存储IP和端口）
     struct sockaddr_in address;
     bzero(&address, sizeof(address));
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = htonl(INADDR_ANY);
     address.sin_port = htons(m_port);
 
+    // 4. 绑定监听socket与IP+端口
+    // bind参数：
+    // m_listenfd=监听socket，
+    // (struct sockaddr*)&address=通用地址结构体，
+    // sizeof(address)=结构体长度
     int flag = 1;
+    int ret = 0;
     setsockopt(m_listenfd, SOL_SOCKET, SO_REUSEADDR, &flag, sizeof(flag));
     ret = bind(m_listenfd, (struct sockaddr *)&address, sizeof(address));
     assert(ret >= 0);
+
+    // 5. 开始监听连接（使socket从主动态变为被动态，接收客户端连接）
+    // listen参数：m_listenfd=监听socket，128=全连接队列的最大长度（Linux默认）
     //表示已连接和未连接的最大队列数总和为5
     ret = listen(m_listenfd, 5);
     assert(ret >= 0);
@@ -154,7 +167,7 @@ void WebServer::eventListen()
     utils.addfd(m_epollfd, m_listenfd, false, m_LISTENTrigmode);
     http_conn::m_epollfd = m_epollfd;
 
-    //socketpair()函数用于创建一对无名的、相互连接的套接子。
+    //socketpair()函数用于创建一对无名的、相互连接的套接字。
     //详情：https://blog.csdn.net/weixin_40039738/article/details/81095013
     ret = socketpair(PF_UNIX, SOCK_STREAM, 0, m_pipefd);
     assert(ret != -1);
